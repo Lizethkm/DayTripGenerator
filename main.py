@@ -20,33 +20,15 @@ santa_clara_entertainments= ['Levis Stadium', 'Californias Great America', 'West
 
 cali_entertainments= [sacramento_entertainments, stockton_entertainments, san_francisco_entertainments, santa_clara_entertainments]
 
-intial_greeting= 'Hello! Sit back and relax, while we plane your next trip in Northern California!'
+intial_greeting= print('Hello! Sit back and relax, while we plan your next trip in Northern California!')
+second_greeting= print('First, we will start with a destination.')
 
-# def choosing_random_destination(norcal_cities):
-#     user_input= input('Which city in Norcal would you like to visit: ')
-#     while user_input != norcal_cities[0] or user_input != norcal_cities[1] or user_input != norcal_cities[2] or user_input != norcal_cities[3]:
-#       user_input= input('Which city in Norcal would you like to visit: ')  
-#     if user_input == norcal_cities[0]:
-#        return result 
-#     else:
-#         print(user_input)
-
-# choosing_random_destination(destinations)
-# print(f'You have chosen ')
 
 def randomizer(my_list):
     random_item= random.choice(my_list)
     return random_item
 
-random_destination= randomizer(destinations)
-random_entertainment= randomizer(cali_entertainments)
-final_entertainment= randomizer(random_entertainment)
-random_travel= randomizer(transportaions)
-random_restaurant= randomizer(cali_restaurants)
-final_restaurant= randomizer(random_restaurant)
 
-print(f'You will be spending the day in {random_destination}, you will get there by {random_travel}, then you will explore {final_entertainment} and end the day with a delicious meal at {final_restaurant}.')
-    
 
 
 
